@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="script/jquery-3.3.1.slim.min.js"></script>
+    <script src="script/popper.min.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+    <script src="./script/sendEmail.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <div id="bgimg">
+            <div class="row" style="margin-left:0px; margin-right: 0px;">
+                <div id="leftSide" class="col-md-4">
+                    <div class="card profileCard" style="width: 18rem;">
+                        <img src="./img/me_avatar_3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Hi, I'm Software Developer.</h5>
+                            <p class="card-text">Simple and clear, I make all kinds of computer applications.</p>
+                            <button class="flat-butt"
+                                onclick="window.open('https://www.linkedin.com/in/mat%C3%ADas-mortara-silva-662448148/','_blank')">
+                                <h6 style="margin-bottom: 0px;">My profile | LinkedIn</h6>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="rightSide" class="col-md-8">
+                    <div class="container">
+                        <div class="row">
+                            <!-- JAVASCRIPT ICON -->
+                            <div class="col-md-2 unhide-r">
+                                <img src="./img/js_icon.png" class="animated infinite pulse">
+                            </div>
+                            <div class="col-md-4 hiddendiv" style="top: -20%;">
+                                <div class="card bg-light mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">JAVASCRIPT</div>
+                                    <div class="card-body">
+                                        <p class="card-text">JavaScript is my favorite choice when programming,
+                                            both BackEnd and FrontEnd</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- IONIC ICON -->
+                            <div id="ionicIcon" class="col-md-2 unhide-r">
+                                <img src="./img/ionic_icon.png" class="animated infinite pulse">
+                            </div>
+                            <div class="col-md-4 hiddendiv" style="top: -50%;">
+                                <div class="card bg-light mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">IONIC</div>
+                                    <div class="card-body">
+                                        <p class="card-text">One of the most promising frameworks of the moment that
+                                            allows to quickly have completely mobile applications, made for the three
+                                            most
+                                            important platforms of devices.
+                                            It is a tool that I usually use to complement a site development.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- NODEJS ICON -->
+                            <div id="nodeIcon" class="col-md-2 unhide-r">
+                                <img src="./img/node_icon.png" class="animated infinite pulse">
+                            </div>
+                            <div class="col-md-4 hiddendiv" style="top: -20%;">
+                                <div class="card bg-light mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">NODEJS</div>
+                                    <div class="card-body">
+                                        <p class="card-text">Currently NodeJS is my strongest skill, its power to
+                                            develop
+                                            all
+                                            kinds of systems on the BackEnd side is the language I prefer to develop
+                                            projects
+                                            for my
+                                            clients.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- HTML ICON -->
+                            <div id="htmlIcon" class="col-md-2 unhide-r"><img src="./img/html_icon.png"
+                                    class="animated infinite pulse">
+                            </div>
+                            <div class="col-md-4 hiddendiv" style="top: -20%;">
+                                <div class="card bg-light mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">HTML</div>
+                                    <div class="card-body">
+                                        <p class="card-text">HTML5 with its new skills allows to provide quick solutions
+                                            and
+                                            versatility for projects that do not require a high level of implementation.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- ANGULAR ICON -->
+                            <div id="angularIcon" class="col-md-2 unhide-r"><img src="./img/angular_icon.png"
+                                    class="animated infinite pulse"></div>
+                            <div class="col-md-4 hiddendiv" style="top: -20%;">
+                                <div class="card bg-light mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">ANGULAR</div>
+                                    <div class="card-body">
+                                        <p class="card-text">In this last time both corporate and commercial sites use
+                                            Angular both for the ability to implement all the necessary business rules
+                                            in
+                                            the
+                                            FrontEnd and only take data to perform transactions against systems in the
+                                            cloud
+                                            or
+                                            servers.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- MONGO-DB ICON -->
+                            <div id="mongoIcon" class="col-md-2 unhide-r">
+                                <img src="./img/mongo_db_icon.png" class="animated infinite pulse">
+                            </div>
+                            <div class="col-md-4 hiddendiv" style="top: -20%;">
+                                <div class="card bg-light mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">MONGODB</div>
+                                    <div class="card-body">
+                                        <p class="card-text">Currently the most popular non-relational database,
+                                            oriented
+                                            to the programming of microservices that can handle JSON documents that can
+                                            change
+                                            with a high frequency.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="wrapper col-md-9">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <h5 class="text-md-right">Contact Me</h5>
+                            <form>
+                                <fieldset class="form-group">
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                                </fieldset>
+                                <fieldset class="form-group">
+                                    <textarea class="form-control" id="message" placeholder="Message"></textarea>
+                                </fieldset>
+                                <fieldset class="form-group text-xs-right">
+                                    <button type="button" class="btn btn-primary-outline btn-lg"
+                                        style="background-color: dodgerblue;" onclick="sendEmail();">Send</button>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer -->
+    </div>
+</body>
+
+</html>

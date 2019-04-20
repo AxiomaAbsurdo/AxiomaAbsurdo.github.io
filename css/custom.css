@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:300);
+
+body{
+    margin: 0%;
+    font-family: "Lato", sans-serif;
+}
+
+#leftSide{
+    color: azure;    
+}
+
+#rightSide{
+    color: #ffffff;
+}
+
+#bgimg{
+    background-image: url('../img/henri-l-547224-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    z-index: 1;
+    height: 100%;
+    width:100%;
+    padding-bottom: 4%
+}
+
+.profileCard{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-bottom: 4%;
+}
+
+.card-title{
+    color: #222222;
+}
+
+.card-text{
+    color: #4d4d4d;
+}
+
+.flat-butt {
+    display:inline-flex;
+    border-radius: 6px;
+    font-family: "Lato", sans-serif;
+    font-size: 16.5px;
+    padding: 10px;
+    border: 0;
+    background: #34495E;
+    color: #FFF;
+    cursor: pointer;
+    outline: 0;
+  }
+  .flat-butt:hover {
+    background: #007bb6;
+  }
+
+/* HIDDEN CARDS */
+
+.hiddendiv{
+    z-index:1;
+    position:absolute;
+    color:#222222;
+    left: 50%;
+    transform:rotateX(90deg);
+    transform-origin:right;
+    transition:transform .3s ease-in-out .2s;
+    animation:show .5s linear;
+    border-radius: 3px;
+    text-align: center;
+}
+
+  
+.unhide-r:hover + .hiddendiv{
+    transform:rotateX(0deg) translateY(100%);  
+}
+
+.unhide-l:hover + .hiddendiv{
+    transform:rotateX(0deg) translateY(100%);  
+}
+
+.footer {
+    text-align: end;
+    display: table-row;
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: auto;
+    background-color: #292c2f;
+    color: #bbb;
+  }
+     
+  footer .form-control {
+      background-color: #1f2022;
+      box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+      border: none;
+      resize: none;
+      color: #d1d2d2;
+  }
+
+  .wrapper{
+    margin-top: 10px;
+    height: auto;
+    text-align: end;
+    margin-left: 68%;
+  }
