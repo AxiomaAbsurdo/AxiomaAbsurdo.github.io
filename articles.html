@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles | Matías Mortara</title>
+
+    <!-- SEO & Meta Tags -->
+    <meta name="description"
+        content="Read articles and insights by Matías Mortara on Software Architecture, Security, and Technology.">
+    <link rel="canonical" href="https://axiomaabsurdo.github.io/articles.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://axiomaabsurdo.github.io/articles.html">
+    <meta property="og:title" content="Articles | Matías Mortara">
+    <meta property="og:description" content="Insights on Software Architecture, Security, and Technology.">
+    <meta property="og:image" content="https://axiomaabsurdo.github.io/img/example/H11.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://axiomaabsurdo.github.io/articles.html">
+    <meta name="twitter:title" content="Articles | Matías Mortara">
+    <meta name="twitter:description" content="Insights on Software Architecture, Security, and Technology.">
+    <meta name="twitter:image" content="https://axiomaabsurdo.github.io/img/example/H11.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <style>
+        .article-list {
+            margin-top: 50px;
+        }
+
+        .article-item {
+            border-bottom: 1px solid var(--border-color);
+            padding: 30px 0;
+            transition: opacity 0.3s;
+        }
+
+        .article-item:hover {
+            opacity: 0.8;
+            border-bottom-color: var(--accent-pink);
+        }
+
+        .article-date {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .article-title {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+
+        .article-excerpt {
+            color: var(--text-secondary);
+            max-width: 800px;
+            line-height: 1.7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-grid"></div>
+
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="logo">MM.</a>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="articles.html" class="nav-link active">Articles</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="Docs/Matias_Mortara_Resume.pdf" download class="nav-link">Resume.PDF <i
+                            class="fas fa-arrow-down"></i></a></li>
+                <li><a href="https://wa.me/59892484485" target="_blank" class="nav-link"><i
+                            class="fab fa-whatsapp"></i></a></li>
+                <li>
+                    <button id="themeToggle" class="theme-switch" aria-label="Toggle Theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="section">
+            <h1 class="hero-title">Writing.</h1>
+            <p class="hero-subtitle">Thoughts on technology, security, and the philosophy of code.</p>
+
+            <div class="article-list">
+                <!-- Article 1 -->
+                <article class="article-item">
+                    <a href="https://www.linkedin.com/pulse/beyond-obvious-third-view-mat%C3%ADas-mortara-wwijf/"
+                        target="_blank">
+                        <span class="article-date">Featured</span>
+                        <h2 class="article-title">Beyond Obvious: The Third View <i class="fas fa-external-link-alt"
+                                style="font-size: 1rem; margin-left: 10px; color: var(--text-secondary);"></i></h2>
+                        <p class="article-excerpt">
+                            Exploring perspectives that lie beyond the immediate duality of choices, finding the "third
+                            view" in problem-solving and life.
+                        </p>
+                    </a>
+                </article>
+
+                <!-- Placeholder for future articles -->
+                <article class="article-item">
+                    <span class="article-date">Coming Soon</span>
+                    <h2 class="article-title">The Intersection of SecOps and Minimalism</h2>
+                    <p class="article-excerpt">
+                        How simplifying infrastructure can actually enhance security posture.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <script src="script/app.js"></script>
+</body>
+
+</html>

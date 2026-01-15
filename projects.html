@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Matías Mortara</title>
+
+    <!-- SEO & Meta Tags -->
+    <meta name="description"
+        content="Explore selected projects by Matías Mortara: Favor Delivery, Haha Crypto Tracker, UTEC TAA, and more secure, scalable applications.">
+    <meta name="keywords"
+        content="Software Projects, Portfolio, Case Studies, Favor, Haha, UTEC, Undergrads, Build With Science, Cardano">
+    <link rel="canonical" href="https://axiomaabsurdo.github.io/projects.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://axiomaabsurdo.github.io/projects.html">
+    <meta property="og:title" content="Projects | Matías Mortara">
+    <meta property="og:description"
+        content="A showcase of secure, scalable applications and platforms including FinTech, EdTech, and On-Demand Delivery solutions.">
+    <meta property="og:image" content="https://axiomaabsurdo.github.io/img/example/H11.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://axiomaabsurdo.github.io/projects.html">
+    <meta name="twitter:title" content="Projects | Matías Mortara">
+    <meta name="twitter:description"
+        content="A showcase of secure, scalable applications and platforms including FinTech, EdTech, and On-Demand Delivery solutions.">
+    <meta name="twitter:image" content="https://axiomaabsurdo.github.io/img/example/H11.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <style>
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .project-card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .project-thumbnail {
+            height: 200px;
+            background: #111;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .project-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+            opacity: 0.8;
+        }
+
+        .project-card:hover .project-thumbnail {
+            border-color: var(--accent-pink);
+        }
+
+        .project-card:hover .project-thumbnail img {
+            transform: scale(1.05);
+            opacity: 1;
+        }
+
+        .project-title {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .project-title i.fa-external-link-alt {
+            font-size: 0.9rem;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .project-card:hover .project-title i.fa-external-link-alt {
+            opacity: 1;
+        }
+
+        .project-desc {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: auto;
+        }
+
+        .tech-tag {
+            font-size: 0.75rem;
+            padding: 4px 8px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 4px;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-grid"></div>
+
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="logo">MM.</a>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="articles.html" class="nav-link">Articles</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="Docs/Matias_Mortara_Resume.pdf" download class="nav-link">Resume.PDF <i
+                            class="fas fa-arrow-down"></i></a></li>
+                <li><a href="https://wa.me/59892484485" target="_blank" class="nav-link"><i
+                            class="fab fa-whatsapp"></i></a></li>
+                <li>
+                    <button id="themeToggle" class="theme-switch" aria-label="Toggle Theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="section">
+            <h1 class="hero-title">Selected Projects.</h1>
+            <p class="hero-subtitle">A collection of applications, platforms, and security implementations.</p>
+
+            <div class="projects-grid">
+                <!-- Favor -->
+                <a href="https://www.favordelivery.com/" target="_blank" class="card project-card">
+                    <div class="project-thumbnail">
+                        <img src="https://images.favordelivery.com/share/facebook.png" alt="Favor">
+                    </div>
+                    <h3 class="project-title">Favor <i class="fas fa-external-link-alt"></i></h3>
+                    <p class="project-desc">On-demand delivery application connecting users with local runners for any
+                        need.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Swift</span>
+                        <span class="tech-tag">Kotlin</span>
+                        <span class="tech-tag">Mobile</span>
+                    </div>
+                </a>
+
+                <!-- Haha -->
+                <a href="https://www.haha.me/" target="_blank" class="card project-card">
+                    <div class="project-thumbnail">
+                        <img src="https://www.haha.me/images/banner.png" alt="Haha">
+                    </div>
+                    <h3 class="project-title">Haha <i class="fas fa-external-link-alt"></i></h3>
+                    <p class="project-desc">Crypto tracking application for BTC, ETH, and BSC transactions using
+                        multiple blockchain APIs.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">NestJS</span>
+                        <span class="tech-tag">Serverless</span>
+                        <span class="tech-tag">Blockchain</span>
+                    </div>
+                </a>
+
+                <!-- UTEC TAA -->
+                <a href="https://taa.utec.edu.uy/en/" target="_blank" class="card project-card">
+                    <div class="project-thumbnail">
+                        <img src="https://taa.utec.edu.uy/wp-content/uploads/2018/11/Recurso-2logo.png" alt="UTEC TAA">
+                    </div>
+                    <h3 class="project-title">UTEC TAA <i class="fas fa-external-link-alt"></i></h3>
+                    <p class="project-desc">Student progress tracking platform for the Technological University of
+                        Uruguay.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">AWS EC2</span>
+                    </div>
+                </a>
+
+                <!-- Undergrads -->
+                <a href="https://undergrads.com/" target="_blank" class="card project-card">
+                    <div class="project-thumbnail">
+                        <img src="https://undergrads.com/wp-content/uploads/2025/02/Full-Color-Logo-Square.png"
+                            alt="Undergrads">
+                    </div>
+                    <h3 class="project-title">Undergrads <i class="fas fa-external-link-alt"></i></h3>
+                    <p class="project-desc">Event resource management platform enhanced for performance and scalability.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">NestJS</span>
+                        <span class="tech-tag">ReactJS</span>
+                        <span class="tech-tag">AWS</span>
+                    </div>
+                </a>
+
+                <!-- Build with Science -->
+                <a href="https://builtwithscience.com/" target="_blank" class="card project-card">
+                    <div class="project-thumbnail">
+                        <img src="https://builtwithscience.com/wp-content/uploads/2024/12/hero-1.png"
+                            alt="Build with Science">
+                    </div>
+                    <h3 class="project-title">Build with Science <i class="fas fa-external-link-alt"></i></h3>
+                    <p class="project-desc">Fitness and nutrition program platform based on scientific training
+                        profiles.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">React-Native</span>
+                        <span class="tech-tag">NestJS</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
+                </a>
+
+                <!-- ERC20 Cardano -->
+                <a href="https://cardano.org/" target="_blank" class="card project-card">
+                    <div class="project-thumbnail">
+                        <img src="https://cardano.org/img/og/default.jpg" alt="Cardano">
+                    </div>
+                    <h3 class="project-title">ERC20 / Cardano <i class="fas fa-external-link-alt"></i></h3>
+                    <p class="project-desc">Blockchain bridge for transferring assets between Ethereum and Cardano
+                        networks.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Web3.js</span>
+                        <span class="tech-tag">Ethereum</span>
+                        <span class="tech-tag">NestJS</span>
+                    </div>
+                </a>
+
+                <!-- Counslr -->
+                <div class="card project-card">
+                    <div class="project-thumbnail">
+                        <img src="https://cdn.prod.website-files.com/64b6a8c1a6708aa73f0b4b00/64b6a8c1a6708aa73f0b4bae_unlimited--image-complete.png"
+                            alt="Counslr">
+                    </div>
+                    <h3 class="project-title">Counslr</h3>
+                    <p class="project-desc">Web and mobile app providing university students with integral psychological
+                        counseling.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">React / Native</span>
+                        <span class="tech-tag">GraphQL</span>
+                        <span class="tech-tag">HIPAA</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script/app.js"></script>
+</body>
+
+</html>

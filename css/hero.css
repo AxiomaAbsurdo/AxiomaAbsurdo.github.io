@@ -1,0 +1,89 @@
+/* Hero Section Layout Updates */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: var(--header-height);
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 650px;
+}
+
+.hero-image {
+    flex: 0 0 350px;
+    /* Fixed width for image container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--surface-color);
+    box-shadow: 0 0 30px rgba(255, 0, 255, 0.2);
+    /* Subtle glow matching accent */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 40px rgba(255, 0, 255, 0.4);
+}
+
+@media (max-width: 968px) {
+    .hero-container {
+        flex-direction: column-reverse;
+        /* Text below image on mobile/tablet if desired, or column for top-down */
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-subtitle {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-image {
+        flex: 0 0 auto;
+    }
+
+    .hero-image img {
+        width: 250px;
+        height: 250px;
+    }
+
+    /* Ensure social links are centered on mobile */
+    .social-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero-title {
+        font-size: var(--fs-h1);
+        /* Use variable */
+    }
+}

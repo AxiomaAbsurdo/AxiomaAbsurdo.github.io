@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Matías Mortara</title>
+
+    <!-- SEO & Meta Tags -->
+    <meta name="description"
+        content="Get in touch with Matías Mortara. Schedule a call for SecOps consulting, software architecture, or technical leadership inquiries.">
+    <link rel="canonical" href="https://axiomaabsurdo.github.io/contact.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://axiomaabsurdo.github.io/contact.html">
+    <meta property="og:title" content="Contact | Matías Mortara">
+    <meta property="og:description"
+        content="Schedule a call or connect with Matías Mortara for SecOps consulting and Architecture inquiries.">
+    <meta property="og:image" content="https://axiomaabsurdo.github.io/img/example/H11.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://axiomaabsurdo.github.io/contact.html">
+    <meta name="twitter:title" content="Contact | Matías Mortara">
+    <meta name="twitter:description"
+        content="Schedule a call or connect with Matías Mortara for SecOps consulting and Architecture inquiries.">
+    <meta name="twitter:image" content="https://axiomaabsurdo.github.io/img/example/H11.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .contact-info {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+        }
+
+        .contact-item {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .contact-item i {
+            color: var(--accent-pink);
+            font-size: 1.2rem;
+        }
+
+        .contact-item a {
+            color: var(--text-primary);
+        }
+
+        /* Calendly overrides */
+        .calendly-inline-widget {
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+        }
+    </style>
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+</head>
+
+<body>
+    <div class="bg-grid"></div>
+
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="logo">MM.</a>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="articles.html" class="nav-link">Articles</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="Docs/Matias_Mortara_Resume.pdf" download class="nav-link">Resume.PDF <i
+                            class="fas fa-arrow-down"></i></a></li>
+                <li><a href="https://wa.me/59892484485" target="_blank" class="nav-link"><i
+                            class="fab fa-whatsapp"></i></a></li>
+                <li>
+                    <button id="themeToggle" class="theme-switch" aria-label="Toggle Theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="section">
+            <h1 class="hero-title">Get in Touch.</h1>
+            <p class="hero-subtitle">
+                Have a project in mind or just want to chat about SecOps, minimalist design, or jazz? Drop me a line.
+            </p>
+
+            <div class="contact-grid">
+                <div>
+                    <h3 style="margin-bottom: 30px; font-size: 1.5rem;">Contact Info</h3>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:m.mortara01@gmail.com">m.mortara01@gmail.com</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(+598) 092 484 485</span>
+                        </div>
+
+
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <a href="https://wa.me/59892484485" target="_blank">Chat on WhatsApp</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Montevideo, Uruguay</span>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 50px;">
+                        <h3 style="margin-bottom: 20px;">Socials</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/AxiomaAbsurdo" target="_blank" class="social-icon"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/matias-mortara" target="_blank" class="social-icon"><i
+                                    class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <!-- Calendly link widget begin -->
+                    <div
+                        style="text-align: center; padding: 40px; border: 1px solid var(--border-color); border-radius: 8px; background: var(--surface-color); height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <i class="far fa-calendar-check"
+                            style="font-size: 3rem; color: var(--accent-pink); margin-bottom: 20px;"></i>
+                        <h3 style="margin-bottom: 15px;">Schedule a Call</h3>
+                        <p style="margin-bottom: 25px; color: var(--text-secondary);">Prefer a video chat? Pick a time
+                            that works for you.</p>
+                        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
+                            async></script>
+                        <a href=""
+                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/m-mortara01'});return false;"
+                            class="btn btn-primary"
+                            style="background: var(--text-primary); color: var(--bg-color);">Book Meeting <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <!-- Calendly link widget end -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script/app.js"></script>
+</body>
+
+</html>

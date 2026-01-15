@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Matías Mortara</title>
+
+    <!-- SEO & Meta Tags -->
+    <meta name="description"
+        content="Learn about Matías Mortara's journey from Software Engineer to SecOps Leader. Expertise in Engineering, Security Operations, and Product Leadership.">
+    <meta name="keywords"
+        content="About Matías Mortara, SecOps Leader, Engineering Manager, Full Stack Developer, Experience, Skills">
+    <link rel="canonical" href="https://axiomaabsurdo.github.io/about.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://axiomaabsurdo.github.io/about.html">
+    <meta property="og:title" content="About | Matías Mortara">
+    <meta property="og:description"
+        content="SecOps Leader and Solutions Architect bridging the gap between Engineering, Security, and Product.">
+    <meta property="og:image" content="https://axiomaabsurdo.github.io/img/example/H11.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://axiomaabsurdo.github.io/about.html">
+    <meta name="twitter:title" content="About | Matías Mortara">
+    <meta name="twitter:description"
+        content="SecOps Leader and Solutions Architect bridging the gap between Engineering, Security, and Product.">
+    <meta name="twitter:image" content="https://axiomaabsurdo.github.io/img/example/H11.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <style>
+        .about-section {
+            padding: 100px 0;
+        }
+
+        .bio-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+        }
+
+        .pillar-card {
+            border-left: 3px solid var(--accent-pink);
+            padding-left: 30px;
+            margin-bottom: 40px;
+        }
+
+        .pillar-title {
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .experience-item {
+            margin-bottom: 50px;
+        }
+
+        .exp-role {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .exp-company {
+            color: var(--accent-pink);
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .exp-date {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .skills-list {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .skills-list li {
+            margin-bottom: 10px;
+            color: var(--text-secondary);
+        }
+
+        .skills-list i {
+            color: var(--accent-blue);
+            /* Distinct from pink */
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-grid"></div>
+
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="logo">MM.</a>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="articles.html" class="nav-link">Articles</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="Docs/Matias_Mortara_Resume.pdf" download class="nav-link">Resume.PDF <i
+                            class="fas fa-arrow-down"></i></a></li>
+                <li><a href="https://wa.me/59892484485" target="_blank" class="nav-link"><i
+                            class="fab fa-whatsapp"></i></a></li>
+                <li>
+                    <button id="themeToggle" class="theme-switch" aria-label="Toggle Theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="about-section">
+            <h1 class="hero-title">About Me.</h1>
+
+            <div class="bio-text">
+                <p>
+                    I currently lead the SecOps department, coordinating security and operations across Eastern Europe,
+                    the US, and Latam.
+                    With a decade of experience as a Software Engineer, I've evolved from programmer and IT technician
+                    to a Technical Leader and Solutions Architect.
+                </p>
+                <br>
+                <p>
+                    My philosophy is simple: <strong>Simplicity is the ultimate sophistication.</strong>
+                    Whether I'm architecting a secure cloud infrastructure or refining a UI component, I strive for
+                    clean, maintainable, and efficient solutions.
+                </p>
+            </div>
+
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin: 80px 0;">
+                <div class="pillar-card">
+                    <h3 class="pillar-title"><i class="fas fa-code"></i> Engineering</h3>
+                    <p class="text-secondary">
+                        Deep expertise in Full Stack Development. I tackle complex technical challenges, ensuring code
+                        quality and robustness from scratch to deployment.
+                    </p>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-check"></i> Node.js / NestJS</li>
+                        <li><i class="fas fa-check"></i> React / Angular / Vue</li>
+                        <li><i class="fas fa-check"></i> Python / Django</li>
+                        <li><i class="fas fa-check"></i> AWS / Docker / Kubernetes</li>
+                    </ul>
+                </div>
+
+                <div class="pillar-card">
+                    <h3 class="pillar-title"><i class="fas fa-shield-halved"></i> SecOps</h3>
+                    <p class="text-secondary">
+                        Bridging the gap between Security and Operations. I implement comprehensive security protocols
+                        and monitoring systems (SIEM) to protect organizational assets.
+                    </p>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-check"></i> Google Chronicle / BackStory</li>
+                        <li><i class="fas fa-check"></i> Access Management</li>
+                        <li><i class="fas fa-check"></i> Compliance & Auditing</li>
+                    </ul>
+                </div>
+
+                <div class="pillar-card">
+                    <h3 class="pillar-title"><i class="fas fa-layer-group"></i> Product</h3>
+                    <p class="text-secondary">
+                        Technical Leadership that aligns with business goals. I translate product vision into technical
+                        reality, managing teams and deliverables effectively.
+                    </p>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-check"></i> Agile Management</li>
+                        <li><i class="fas fa-check"></i> Team Leadership</li>
+                        <li><i class="fas fa-check"></i> Solution Architecture</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2 class="hero-title" style="font-size: 2.5rem; margin-top: 100px;">Experience.</h2>
+
+            <div class="experience-list">
+                <!-- Sparq -->
+                <div class="experience-item">
+                    <div class="exp-role">Senior FullStack Engineer | Consultant</div>
+                    <div class="exp-company">Sparq</div>
+                    <span class="exp-date">Jul 2024 - Present</span>
+                    <p class="text-secondary">
+                        Worked on SambaSafety integration. Stack: VUE 3, Java, TypeScript, EKS, Single-SPA, AWS.
+                    </p>
+                </div>
+                <!-- Dualboot Partners -->
+                <div class="experience-item">
+                    <div class="exp-role">Technical Leader & SecOps Leader</div>
+                    <div class="exp-company">Dualboot Partners, Uruguay</div>
+                    <span class="exp-date">Dec 2021 - Jul 2024</span>
+                    <p class="text-secondary">
+                        Led technical teams and unified security processes across three regions. Developed full-stack
+                        apps (Bid For Media, Favor) and provided IT security consulting.
+                    </p>
+                </div>
+
+                <!-- Undergrads -->
+                <div class="experience-item">
+                    <div class="exp-role">Technical Leader (Backend/Frontend/Infra)</div>
+                    <div class="exp-company">Undergrads</div>
+                    <span class="exp-date">Feb 2021 - Dec 2023</span>
+                    <p class="text-secondary">
+                        Enhanced performance and scalability for event resource management. Stack: NestJS, ReactJS, AWS.
+                    </p>
+                </div>
+
+                <!-- SpaceDev -->
+                <div class="experience-item">
+                    <div class="exp-role">Technical Leader & Full Stack Developer</div>
+                    <div class="exp-company">SpaceDev Uruguay</div>
+                    <span class="exp-date">Jul 2021 - Dec 2021</span>
+                    <p class="text-secondary">
+                        Worked on crypto tracking apps (Haha) and university platforms (UTEC TAA). Stack: NestJS,
+                        Serverless, React.
+                    </p>
+                </div>
+
+                <!-- Simplex Software -->
+                <div class="experience-item">
+                    <div class="exp-role">Technical Leader & Architect</div>
+                    <div class="exp-company">Simplex Software, Argentina</div>
+                    <span class="exp-date">Jan 2021 - Jul 2021</span>
+                    <p class="text-secondary">
+                        Built fitness apps (Build with Science) and sports marketplaces (Fractor). Stack: React-Native,
+                        NestJS.
+                    </p>
+                </div>
+
+                <!-- AtixLabs -->
+                <div class="experience-item">
+                    <div class="exp-role">Technical Leader & Blockchain Dev</div>
+                    <div class="exp-company">AtixLabs, Argentina</div>
+                    <span class="exp-date">Jan 2021 - Sep 2021</span>
+                    <p class="text-secondary">
+                        Worked on Blockchain bridges (ERC20 Converter) and DeFi protocols (DeFiner). Stack: Blockchain,
+                        Web3.JS, NestJS.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script/app.js"></script>
+</body>
+
+</html>
